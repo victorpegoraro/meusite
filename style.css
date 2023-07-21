@@ -1,0 +1,529 @@
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 0px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #43C262; 
+    border-radius: 0px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6de68b; 
+  }
+
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color:  #111824 ;
+    color: #F2E4BD;
+    scroll-behavior: smooth;
+}
+
+
+canvas{ display: block; ; } 
+/* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #111824; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+
+.page{
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.0); /* Black w/ opacity */
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+.logo{
+    cursor: pointer;
+    width: 82px;
+    height: 82px;
+}
+
+.ola{
+    color: #43C262 ; 
+    font-size: 25px ;
+}
+
+.nome{
+    color: #B4BEDC ; 
+    font-size: 90px;
+    border-right: 2px solid #43C262;
+    white-space: nowrap;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+.digitando{
+    animation: digitando 500ms infinite normal, type 4s 1s infinite normal ;
+}
+
+@keyframes digitando {
+    from{
+        border-right-color: #43C262 ;
+    }
+    to{
+        border-right-color: transparent ;
+    }
+}
+
+@keyframes type {
+    from{
+        width: 0px;
+    }
+    to{
+        width: 500px ;
+    }
+}
+
+
+.container{
+    width: 100% ;
+    padding-left: 5% ;
+    padding-right: 5% ;
+}
+
+.topbar{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 20px ;
+    padding-bottom: 20px ;
+    background-color:  #111824 ;
+    border-top: 1px solid #43C262 ;
+    border-left: 1px solid #43C262 ;
+    z-index: 10;
+}
+.sidebar{
+    border-right: 2px solid #43C262 ;
+}
+.sidebar button{
+    color: whitesmoke;
+}
+
+.itembar{
+    float: right;
+    color: #B4BEDC ; 
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-right: 5%;
+    text-align: center;
+}
+.itembar:hover{
+    color: #43C262 ;
+}
+.btnmenu{
+    cursor: pointer;
+    float: right;
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 15px;
+    text-align: center;
+    background-color: transparent;
+    border: none; 
+    color: #43C262 ;
+    display: none;
+}
+.btnmenu:hover{
+    color: #F2E4BD ; 
+}
+
+.btncontato{
+    float: right;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #283041;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    border-radius: 5px;
+    width: 130px ;
+    text-align: center;
+    color: #B4BEDC ; 
+}
+
+.btncontato:hover{
+    background-color: #43C262;
+    color: #141414;
+}
+
+.bannerbtn1{
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #43C262 ;
+    color: #43C262;
+    padding-top: 20px ;
+    padding-bottom: 20px;
+    margin-right: 9% ;
+    width: 45% ;
+    font-size: 20px ;
+}
+.bannerbtn1:hover{
+    background-color: #43C262;
+    color: #141414 ;
+}
+
+
+.bannerbtn2{
+    cursor: pointer;
+    background-color:#43C262;
+    border-radius: 5px;
+    border: 1px solid #43C262 ;
+    color: #141414;
+    padding-top: 20px ;
+    padding-bottom: 20px;
+    width: 45% ;
+    font-size: 20px ;
+}
+.bannerbtn2:hover{
+    background-color: #4fdb72 ;
+}
+
+.foto{
+    width: 60%; 
+    height: auto;
+    border: 2px solid #43C262 ;
+    border-radius: 5px ;
+}
+
+.section1{
+    border-left: 1px solid #43C262 ; 
+    border-bottom: 1px solid #43C262 ; 
+    padding-top: 170px ;
+    padding-bottom: 40px;
+}
+
+.tag1{
+    margin-top: 20px ;  
+    color: #B4BEDC ; 
+    font-size: 30px ;
+}
+
+.cardbig{
+    background-color: #151C2A; 
+    border-radius: 15px ; 
+    margin-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 46% ;
+    display: inline-block ;
+    margin-right: 7% ;
+    color: #d9d9d9 ;
+}
+
+.cardbig1{
+    background-color: #151C2A; 
+    border-radius: 15px ; 
+    margin-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 46% ;
+    display: inline-block ;
+    color: #d9d9d9 ;
+}
+
+.section2{
+    background-color: whitesmoke; 
+    color: #141414 ; 
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+.section3{
+    background-color: transparent; 
+    color: #d9d9d9 ; 
+    padding-top: 130px;
+    padding-bottom: 60px;
+    height: 800px ;
+    border-top: 2px solid #43C262 ;
+    background-color:  #111824 ;
+}
+
+.section4{
+    background-color: whitesmoke; 
+    color: #141414 ; 
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+.section5{
+    border-left: 1px solid #43C262 ; 
+    padding-top: 120px ;
+    padding-bottom: 30px;
+    background-color:  #111824 ;
+}
+
+.imgleng{
+    width: 60%;
+    height: auto;
+}
+
+#sobre{ padding-top: 140px ; }
+
+
+.certificados{
+    background-image: url('imgs/Certificacoes-bg.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 350px;
+    color: whitesmoke ;
+    border-radius: 30px ;
+    text-align: center;
+}
+.btncertificados{
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #43C262 ;
+    color: #43C262;
+    padding-top: 20px ;
+    padding-bottom: 20px;
+    padding-left: 50px ;
+    padding-right: 50px ;
+    font-size: 20px ;
+    text-decoration: none;
+}
+.btncertificados:hover{
+    color: #141414 ;
+    background-color: #43C262 ;
+}
+
+.numcert{ font-size: 40px }
+
+.card-servico{
+    border-radius: 25px ;
+    background-color: #151C2A;
+    position: relative;
+    margin-bottom: 20px ;
+}
+.imgservico{
+    width: 100%;
+    height: auto;
+}
+
+.card-conteudo{
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 5% ;
+    padding-bottom: 30px ;
+    padding-top: 20px;
+}
+
+.titulo-servico{
+    font-size: 30px ; 
+    color: #1A9866 ;
+}
+
+.btnconversar{
+    text-decoration: none;
+    color: #4ddaa1 ;
+    font-size: 20px ;
+}
+
+.itens-servicos{
+    color: #B4BEDC ; 
+    font-size: 18px;
+}
+
+.btnconversar:hover{color: whitesmoke ;}
+
+.projetotela{
+    border-radius:5px ;
+    border: 2px solid #151C2A;
+    background-color: whitesmoke ;
+}
+
+.projetoimg{
+    width: 100%;
+    height: auto;
+}
+
+.projetotext{
+    border-left: 2px solid #03A953 ;
+    padding-left: 15px ;
+}
+
+.btnprojeto{
+    text-decoration: none;
+    color: #03A953;
+    font-size: 20px ;
+}
+.btnprojeto:hover{
+    color: #111824 ;
+}
+
+.btnprojetogit{
+    color: #03A953;
+    font-size: 20px ;
+    text-decoration: none;
+}
+.btnprojetogit:hover{color: #111824 ;}
+
+.mais{ display: none;  }
+
+.social{ 
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+.social:hover{ 
+    cursor: pointer;
+    color: #43C262 ;  
+}
+
+.input{
+    border-radius: 15px;
+    background-color: #181F2C;
+    margin-bottom: 20px;
+    padding: 15px ;
+    border: none ;
+    width: 100% ;
+    color: whitesmoke ;  
+    outline: none;
+}
+.input::placeholder {
+    color: #2B3E52;
+    opacity: 1; /* Firefox */
+  }
+  
+  .input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #2B3E52;
+  }
+  
+  .input::-ms-input-placeholder { /* Microsoft Edge */
+   color: #2B3E52;
+  }
+
+.rodape{
+    color: #B4BEDC ; 
+    border-left: 1px solid #43C262 ; 
+    border-bottom: 1px solid #43C262 ; 
+    padding: 15px ; 
+    font-size: 12px ;
+    background-color:  #111824 ;
+}
+.copy{
+    float: right; 
+    margin-top: 10px ;
+}
+
+.colrodape{
+    display: inline ;
+    width: 50%;
+}
+
+.msg{
+    position: fixed ;
+    bottom: 0;
+    background-color: #43C258;
+    left: 0;
+    margin-left: 10px ;
+    margin-bottom: 10px;
+    width: 30% ;
+    padding: 20px ;
+    color: #141414 ;
+    font-size: 15px;
+    border-radius: 5px ;
+}
+
+.btnenviar{
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #43C262 ;
+    color: #43C262;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    width: 50% ;
+    font-size: 20px ;
+    float: right;
+}
+.btnenviar:hover{
+    background-color: #43C262;
+    color: #141414 ;
+}
+
+@media only screen and (max-width: 1000px) {
+    .logo{
+        width: 41px;
+        height: 41px;
+    }
+    .ola{
+        font-size: 20px ;
+    }
+    .nome{
+        font-size: 45px;
+    }
+    .topbar{
+        padding-top: 10px ;
+        padding-bottom: 15px;
+        z-index: 0;
+    }
+    .itembar {
+        display: none;
+    }
+    .section1{
+        padding-top: 80px ;
+    }
+    .btncontato{
+        display: none;
+    }
+    .btnmenu{
+        display: block ;
+    }
+    .bannerbtn1{
+        width: 100%;
+        margin-right: 0% ;
+    }
+    .bannerbtn2{
+        width: 100%;
+        margin-top: 20px ;
+    }
+    .imgbanner{ display: none ; }
+    .tag1{font-size: 16px;}
+    .cardbig{
+        width: 100%;
+        margin-right: 0%;
+    }
+    .cardbig1{width: 100%;}
+    #sobre{ padding-top: 70px ; }
+    .section2{ padding-top: 50px ; }
+    .section3{ 
+        padding-top: 70px ;
+        height: auto ;
+     }
+    .numcert{font-size: 25px;}
+    .btncertificados{
+        padding-left: 50px ;
+        padding-right: 50px ;
+        font-size: 15px ;
+    }
+    .card-servico{position: static; }
+    .titulo-servico{font-size: 20px ; }
+    .section4{ padding-top: 50px ; }
+    .projetotext{margin-top: 50px;}
+    .btnprojetogit{
+        float: none;
+    }
+    .section5{padding-top: 60px ;}
+    .copy{ float: none;}
+    .colrodape{ width: 100%; }
+    .msg{ width: 70%; }
+  }

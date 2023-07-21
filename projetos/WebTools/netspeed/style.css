@@ -1,0 +1,37 @@
+/* ---- reset ---- */ 
+body{ 
+    margin: 0 ;
+    height: 100%;
+    color: whitesmoke ;
+    font-family: 'Chelsea Market';
+    background: rgb(0,0,0);
+    background: url("backnet.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+} 
+
+h1{ color: #beff29; }
+
+iframe{
+    box-shadow: 0px 0px 10px 2px #beff29;
+    border-radius: 5px ;
+    background-color: black;
+}
+
+.logo{
+    background-color: transparent ;
+    border: 2px solid #33c5dc ;
+    color: #33c5dc ;
+    font-family: 'Chelsea Market';
+    font-size: 20px ;
+    margin: 10px ;
+    border-radius: 3px ;
+    padding: 7px ;
+}
+
+.logo:hover{
+    border: 2px solid #33c5dc  ;
+    box-shadow: 0px 0px 10px 2px #33c5dc;
+}

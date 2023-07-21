@@ -1,0 +1,108 @@
+
+body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } 
+canvas{ display: block;} 
+
+/* ---- particles.js container ---- */ 
+#particles-js{ position:absolute; width: 100%; height: 100%; background-color: #020202; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } /* ---- stats.js ---- */ .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{  margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 3px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #03da15 ; 
+    border-radius: 10px;
+  }
+  
+
+.pagina{
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.0); /* Black w/ opacity */
+    padding: 0px;
+}
+
+
+.conteudo{
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    border-radius: 5px;
+    border: 1px solid #03da15 ;
+    color: #03da15 ;
+    width: 60% ;
+    padding-top: 30px;
+    font-family: 'Audiowide';
+    margin-top: 80px ;
+    margin-bottom: 80px;
+    word-wrap: break-word;
+}
+
+
+.input-text{
+    background-color: transparent ;
+    border: none ;
+    border-bottom: 2px solid #03da15 ;
+    padding: 5px ;
+    width: 60%; 
+    text-align: center ;
+    margin-bottom: 35px ;
+    color: #03da15 ;
+    font-size: 20px ;
+    padding: 5px ;
+}
+.input-text:focus{
+    outline: none;
+}
+
+.btn{
+    background-color: transparent ;
+    border: 2px solid #03da15 ;
+    color: #03da15 ;
+    padding-top: 20px ;
+    padding-bottom: 20px ;
+    border-radius: 5px ;
+    font-size: 20px ;
+    width: 40% ;
+    font-family: 'Audiowide';
+}
+.btn:hover{
+    cursor: pointer;
+    color: black ;
+    background-color: #03da15 ;
+}
+
+#result{ 
+    font-size: 20px ;
+    padding-right: 25px ;
+    padding-left: 25px ;
+}
+b{ color: whitesmoke ; }
+
+.img{
+    width: 10% ; 
+    height: 10% ;
+}
+
+@media only screen and (max-width: 600px) {
+    .conteudo{
+      width: 95% ;
+    }
+    .input-text{
+        width: 90% ;
+    }
+    #result{ font-size: 15px; }
+    .img{ width: 30% ; height: 30%; }
+}

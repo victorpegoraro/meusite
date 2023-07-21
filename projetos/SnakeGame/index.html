@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snake Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="icon" type="image/x-icon" href="iconesnake.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400;1,900&family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+</head>
+<style>
+
+html, body {
+  margin:0px;
+  color: #333 ;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #b2bd07;
+}
+
+span{
+    font-size: 30px;
+}
+
+.jogo{
+    border-radius: 5px;
+}
+
+
+</style>
+<body>
+
+    <div align="center" class="w3-display-middle" >
+        <span style='font-size: 40px;' >SNAKE GAME</span>
+        <br>
+        <span>RECORD</span>
+        <span id="pontos" >0</span>
+
+        <br>
+        <canvas id="canvas" height="360" width="360"  class="jogo w3-card-4" > </canvas>
+        <br>
+        <img src="snake.png" alt="Snake Game">
+    </div>
+
+    <script src="script.js"></script>
+   
+</body>
+</html>

@@ -1,0 +1,128 @@
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e0e0d1 ;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+}
+
+
+.topbar{
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 20px ;
+  padding-left: 5% ;
+  padding-right: 5% ;
+  z-index: 1;
+  background-color: #141414;
+}
+.sidebar{
+  border-right: 2px solid #141414 ;
+  z-index: 2;
+}
+.sidebar button{
+  color: whitesmoke;
+}
+
+.itembar{
+  float: right;
+  color: #fff ; 
+  text-decoration: none;
+  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin-right: 5%;
+  text-align: center;
+}
+.itembar:hover{
+  color: #12E0F9 ;
+}
+.btnmenu{
+  cursor: pointer;
+  float: right;
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 30px;
+  text-align: center;
+  background-color: transparent;
+  border: none; 
+  color: #fff;
+  display: none;
+}
+.btnmenu:hover{
+  color: #F2E4BD ; 
+}
+
+.btncontato{
+  float: right;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: #283041;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  border-radius: 5px;
+  width: 130px ;
+  text-align: center;
+  color: #B4BEDC ; 
+}
+
+.btncontato:hover{
+  background-color: #43C262;
+  color: #141414;
+}
+
+.gerar {
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	background-color:#768d87;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+  margin-top: 15px ;
+}
+.gerar:hover {
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	background-color:#6c7c7c;
+}
+.gerar:active {
+	position:relative;
+	top:1px;
+}
+
+.box{
+
+  border: solid 3px gray ;
+
+}
+
+  
+@media only screen and (max-width: 1000px) {
+ 
+  .topbar{
+      padding-top: 10px ;
+      padding-bottom: 15px;
+      z-index: 0;
+  }
+  .itembar {
+      display: none;
+  }
+  .btnmenu{
+      display: block;
+  }
+}
